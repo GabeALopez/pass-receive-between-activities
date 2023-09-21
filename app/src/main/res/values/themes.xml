@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lopez_Gabriel_Pass_Receive_Between_Activities" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Lopez_Gabriel_Pass_Receive_Between_Activities" parent="Base.Theme.Lopez_Gabriel_Pass_Receive_Between_Activities" />
+</resources>
