@@ -7,12 +7,59 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtMyNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="My Name:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Song Activity"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editText"
+        android:layout_width="205dp"
+        android:layout_height="18dp"
+        android:hint="hint"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="188dp"
+        android:layout_height="30dp"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="169dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Course Activity"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <TextView
+        android:id="@+id/txtMyFavCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Favorite Song:"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="169dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Favorite Course:"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="71dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
