@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.content.Intent;
 
 public class favoriteCourse extends AppCompatActivity {
 
@@ -16,6 +17,8 @@ public class favoriteCourse extends AppCompatActivity {
         Intent intentCourse = getIntent();
 
         string strCourse = intentCourse.getStringExtra("message_key1");
+
+        receivedInfoCourse.setText(strCourse);
 
 
 
