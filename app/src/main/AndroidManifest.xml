@@ -16,7 +16,7 @@
             android:name=".favoriteSong"
             android:exported="false" />
         <activity
-            android:name=".aboutMe"
+            android:name=".favoriteCourse"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
