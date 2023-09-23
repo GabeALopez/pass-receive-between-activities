@@ -16,7 +16,7 @@ public class favoriteCourse extends AppCompatActivity {
         TextView receivedInfoCourse = (TextView) (R.id.txtFavoriteCourse);
         Intent intentCourse = getIntent();
 
-        string strCourse = intentCourse.getStringExtra("message_key1");
+        String strCourse = intentCourse.getStringExtra("message_key1");
 
         receivedInfoCourse.setText(strCourse);
 

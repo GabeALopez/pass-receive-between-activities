@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                string strCourse = edtCourse.getText().toString();
-                string strNameCourse = txtMyName.getText().toString();
+                String strCourse = edtCourse.getText().toString();
+                String strNameCourse = txtMyName.getText().toString();
 
                 Intent intentCourse = new Intent(getApplicationContext(), favoriteCourse.class);
                 intentCourse.putExtra("message_key1", strCourse);
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                string strSong = edtSong.getText().toString();
-                string strNameSong = txtMyName.getText().toString();
+                String strSong = edtSong.getText().toString();
+                String strNameSong = txtMyName.getText().toString();
 
                 Intent intentSong = new Intent(getApplicationContext(), favoriteSong.class);
                 intentSong.putExtra("message_key1", strSong);
