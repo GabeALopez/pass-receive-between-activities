@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class aboutMe extends AppCompatActivity {
+public class favoriteSong extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.favorite_course);
+        setContentView(R.layout.activity_favorite_song);
     }
 }
