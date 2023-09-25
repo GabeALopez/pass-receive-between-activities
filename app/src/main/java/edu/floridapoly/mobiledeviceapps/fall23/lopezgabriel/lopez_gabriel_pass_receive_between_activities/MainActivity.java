@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 intentCourse.putExtra("message_key1", strCourse);
                 intentCourse.putExtra("message_key2",strNameCourse);
 
-                startActivity((intentCourse));
+                startActivity(intentCourse);
             }
         });
         //------------------------------------------------------------------------------
@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intentSong = new Intent(getApplicationContext(), favoriteSong.class);
                 intentSong.putExtra("message_key3", strSong);
+                intentSong.putExtra("message_key4", strNameSong);
 
-                Intent intentNameSong = new Intent(getApplicationContext(), favoriteSong.class);
-                intentNameSong.putExtra("message_key4", strNameSong);
+                startActivity(intentSong);
 
             }
         });

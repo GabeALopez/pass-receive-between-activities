@@ -32,34 +32,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
+        android:layout_marginTop="143dp"
         android:text="Favorite Song:"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtFavoriteSong"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtFavoriteSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="53dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginBottom="27dp"
         android:text="TestInformation"
-        app:layout_constraintStart_toStartOf="@+id/btnApproveSong"
-        app:layout_constraintTop_toBottomOf="@+id/txtMyNameSong" />
+        app:layout_constraintBottom_toTopOf="@+id/btnApproveSong"
+        app:layout_constraintStart_toStartOf="@+id/btnApproveSong" />
 
     <TextView
         android:id="@+id/txtMyNameSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="39dp"
         android:text="TestInformation"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
-        app:layout_constraintEnd_toEndOf="@+id/txtFavoriteSong" />
+        app:layout_constraintStart_toStartOf="@+id/txtFavoriteSong"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <Button
         android:id="@+id/btnApproveSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="27dp"
         android:text="Approve"
         app:layout_constraintStart_toEndOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />

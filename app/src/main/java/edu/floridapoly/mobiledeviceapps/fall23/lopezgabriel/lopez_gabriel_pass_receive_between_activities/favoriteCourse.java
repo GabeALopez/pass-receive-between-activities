@@ -48,7 +48,6 @@ public class favoriteCourse extends AppCompatActivity {
     public void onBackPressed() {
 
         Button btnApprovedCheck = findViewById(R.id.btnApproveCourse);
-        TextView txtFavoriteSendBack = findViewById(R.id.txtFavoriteCourse);
         String message;
 
         if (btnApprovedCheck.getText().toString() == "Approved")
