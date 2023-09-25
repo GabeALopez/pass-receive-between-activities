@@ -16,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Variable Set Up
         Button btnCourseActivity = (Button) findViewById(R.id.btnCourseActivity);
         Button btnSongActivity = (Button) findViewById(R.id.btnSongActivity);
         EditText edtCourse = (EditText) findViewById(R.id.edtFavoriteCourse);
         EditText edtSong = (EditText) findViewById(R.id.edtFavoriteSong);
         TextView txtMyName = (TextView) findViewById(R.id.txtMyName);
 
+        //---------------Send Information to Course Activity-------------------------------
         btnCourseActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,13 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 intentCourse.putExtra("message_key1", strCourse);
                 intentCourse.putExtra("message_key2",strNameCourse);
 
-                //Intent intentNameCourse = new Intent(getApplicationContext(), favoriteSong.class);
-                //intentNameCourse.putExtra("message_key2", strNameCourse);
-
                 startActivity((intentCourse));
             }
         });
+        //------------------------------------------------------------------------------
 
+        //--------------Send Information to Song Activity-------------------------------
         btnSongActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //------------------------------------------------------------------------------
 
     }
 }
