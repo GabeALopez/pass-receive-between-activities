@@ -3,6 +3,7 @@ package edu.floridapoly.mobiledeviceapps.fall23.lopezgabriel.lopez_gabriel_pass_
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 
@@ -13,12 +14,22 @@ public class favoriteCourse extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.favorite_course);
 
-        TextView receivedInfoCourse = (TextView) (R.id.txtFavoriteCourse);
+        Button btnApprove = findViewById(R.id.btnApproveCourse);
+        TextView receivedName = (TextView) findViewById(R.id.txtMyNameCourse);
+        TextView receivedInfoCourse = (TextView) findViewById(R.id.txtFavoriteCourse);
+
+        //------------------------------------------------------------------------------
         Intent intentCourse = getIntent();
 
-        String strCourse = intentCourse.getStringExtra("message_key1");
+        String strNameCourse = intentCourse.getStringExtra("message_key2");
+        receivedName.setText((strNameCourse));
 
+        String strCourse = intentCourse.getStringExtra("message_key1");
         receivedInfoCourse.setText(strCourse);
+        //------------------------------------------------------------------------------
+
+        btnApprove.setText("Approved");
+
 
 
 

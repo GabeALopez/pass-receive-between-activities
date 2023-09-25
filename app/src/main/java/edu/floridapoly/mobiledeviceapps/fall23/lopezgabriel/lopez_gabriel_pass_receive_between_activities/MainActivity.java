@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnCourseActivity = (Button) (R.id.btnCourseActivity);
-        Button btnSongActivity = (Button) (R.id.btnSongActivity);
+        Button btnCourseActivity = (Button) findViewById(R.id.btnCourseActivity);
+        Button btnSongActivity = (Button) findViewById(R.id.btnSongActivity);
         EditText edtCourse = (EditText) findViewById(R.id.edtFavoriteCourse);
         EditText edtSong = (EditText) findViewById(R.id.edtFavoriteSong);
         TextView txtMyName = (TextView) findViewById(R.id.txtMyName);
@@ -31,9 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intentCourse = new Intent(getApplicationContext(), favoriteCourse.class);
                 intentCourse.putExtra("message_key1", strCourse);
+                intentCourse.putExtra("message_key2",strNameCourse);
 
-                Intent intentNameCourse = new Intent(getApplicationContext(), favoriteSong.class);
-                intentNameCourse.putExtra("message_key2", strNameCourse);
+                //Intent intentNameCourse = new Intent(getApplicationContext(), favoriteSong.class);
+                //intentNameCourse.putExtra("message_key2", strNameCourse);
+
+                startActivity((intentCourse));
             }
         });
 
@@ -45,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
                 String strNameSong = txtMyName.getText().toString();
 
                 Intent intentSong = new Intent(getApplicationContext(), favoriteSong.class);
-                intentSong.putExtra("message_key1", strSong);
+                intentSong.putExtra("message_key3", strSong);
 
                 Intent intentNameSong = new Intent(getApplicationContext(), favoriteSong.class);
-                intentNameSong.putExtra("message_key2", strNameSong);
+                intentNameSong.putExtra("message_key4", strNameSong);
 
             }
         });
